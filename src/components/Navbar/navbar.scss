@@ -1,0 +1,78 @@
+@use "../../style/_variables/color" as _col;
+@import "../../style/function/response";
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0 55px 0;
+    z-index: 999;
+    .bg-black {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: _col.$very-dark-blue-opacity;
+        display: none;
+        pointer-events: none;
+        @include mobile{
+            display: block;
+        }
+    }
+    .logo {
+        img {
+            height: 40px;
+            @include mobile {
+                height: 30px;
+            }
+        }
+    }
+    @include mobile {
+        padding: 30px 0;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @include mobile {
+            position: absolute;
+            width: 70vw;
+            height: 100vh;
+            right: 0;
+            top: 0;
+            flex-direction: column;
+            padding: 150px 20px;
+            background-color: _col.$off-white;
+            align-items: flex-start;
+        }
+        .icon-close {
+            display: none;
+            @include mobile {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 25px;
+            }
+        }
+        .item {
+            color: _col.$dark-grayish-blue;
+            cursor: pointer;
+            &:hover {
+                color: _col.$soft-red;
+            }
+        }
+    }
+    .menu-close {
+        @include mobile{
+            display: none;
+        }
+    }
+    .icon-menu {
+        display: none;
+        width: 40px;
+        height: 17px;
+        @include mobile {
+            display: block;
+        }
+    }
+}

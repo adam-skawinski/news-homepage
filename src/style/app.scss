@@ -1,0 +1,9 @@
+@import './function/response';
+
+.app {
+    width: 100vw;
+    max-width: 1110px;
+    @include tablet{
+        padding: 0 16px;
+    }
+}
