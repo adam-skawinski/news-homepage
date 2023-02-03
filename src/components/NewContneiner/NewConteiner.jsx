@@ -1,5 +1,6 @@
 import React from 'react';
 import newContent from '../../data/newContent';
+
 import './newConteiner.scss';
 
 const NewConteiner = () => {

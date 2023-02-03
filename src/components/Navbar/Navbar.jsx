@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './navbar.scss';
+
 import logo from '../../img/svg/logo.svg';
 import iconMenu from '../../img/svg/icon-menu.svg';
 import iconClose from '../../img/svg/icon-menu-close.svg';
+
+import './navbar.scss';
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)

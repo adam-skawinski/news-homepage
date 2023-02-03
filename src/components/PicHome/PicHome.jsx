@@ -1,5 +1,6 @@
 import mainPic from '../../img/image-web-3-desktop.jpg';
 import mainPicMobile from '../../img/image-web-3-mobile.jpg';
+
 import './picHome.scss';
 
 const PicHome = () => {

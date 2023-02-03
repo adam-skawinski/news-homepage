@@ -4,7 +4,6 @@
 
 .home{
     width: 100%;
-    // background-color: rgba(0, 155, 0, 0.483);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px 170px auto;
@@ -19,7 +18,6 @@
         gap: 50px;
     }
     .item{
-        // background-color: red;
         &:nth-child(1){
             grid-column: 1/3;
             background-color: blue;
