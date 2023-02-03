@@ -7,7 +7,7 @@
     padding: 90px 0 55px 0;
     z-index: 999;
     .bg-black {
-        position: absolute;
+            position: fixed;
         left: 0;
         top: 0;
         width: 100vw;
@@ -35,7 +35,7 @@
         align-items: center;
         gap: 40px;
         @include mobile {
-            position: absolute;
+            position: fixed;
             width: 70vw;
             height: 100vh;
             right: 0;

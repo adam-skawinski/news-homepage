@@ -1,0 +1,23 @@
+@import "../../style/function/response";
+
+.pic-home {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .pic-home-desktop {
+        @include mobile {
+            display: none;
+        }
+    }
+    .pic-home-mobile {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+}

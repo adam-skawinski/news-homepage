@@ -1,0 +1,48 @@
+@use "../../style/_variables/font-weight" as _fw;
+@use "../../style/_variables/color" as _col;
+
+.new-conteiner {
+    height: 100%;
+    width: 100%;
+    background-color: _col.$very-dark-blue;
+    color: _col.$off-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 25px;
+    .header-conteiner {
+        font-size: 40px;
+        font-weight: _fw.$bool;
+        color: _col.$soft-orange;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // height: 100%;
+        .item-new {
+            padding: 30px 0;
+            .header {
+                font-weight: _fw.$bool;
+                font-size: 20px;
+                padding-bottom: 10px;
+                cursor: pointer;
+                &:hover{
+                    color: _col.$soft-orange;
+                }
+            }
+            .note {
+                line-height: 24px;
+                font-size: 16;
+                color: _col.$grayish-blue;
+            }
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                border-bottom: 1px solid _col.$off-white;
+            }
+            &:nth-of-type(3) {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
